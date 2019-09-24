@@ -1,0 +1,129 @@
+body {
+    background-color: whitesmoke;
+    margin: 0em;
+}
+
+.logo {
+    padding: 2em;
+    margin: -5.7em 2em 2em 1em;
+}
+
+nav ul {
+    margin: 1em;
+    /*zijkanten niet meer tegen rand  */
+    padding: 0;
+    /*standaard setting weg van padding 40 rechts */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, .9);
+}
+
+nav li {
+    display: inline;
+    padding: 1em;
+    /*ruimte tussen linkjes*/
+    /*font-weight: bold;*/
+    font-weight: 70;
+    font-family: 'Courier New';
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+/* producten main */
+
+main {
+    max-width: 300em;
+    margin: 0;
+}
+
+.producten {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 0;
+}
+
+/* HIER MEE BEZIG
+.prod {
+    padding: 2em;
+    margin: -5.7em 2em 2em 1em;
+}
+
+.producten {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.producten li {
+    margin: -1em;
+    padding: -2em;
+}
+*/
+
+/*detailpagina*/
+
+.detailproduct {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.detailfoto {
+    padding: 1em;
+}
+
+button {
+    padding: 1.2em;
+}
+
+/*media queries -maten mobiel etc*/
+
+/*iphone*/
+
+@media (min-width:320px) {
+    body {
+        background-color: grey;
+    }
+    /*hellup*/
+    nav ul {}
+    .producten {
+        column-count: 10px;
+    }
+}
+
+
+@media (min-width:35em) {
+    body {
+        background-color: aquamarine;
+
+    }
+}
+
+
+@media (min-width:50em) {
+    body {
+        background-color: brown;
+
+    }
+}
