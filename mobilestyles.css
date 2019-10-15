@@ -1,4 +1,5 @@
 /* Alle lettertypes/font-sizes nog aanpassen*/
+
 /*detailpagina afmaken: winkelwagen, aantal items*/
 
 body {
@@ -7,12 +8,12 @@ body {
     margin: 2em;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 1fr 20px ;
+    grid-template-rows: 20px 1fr 20px;
     grid-gap: 1em;
 }
 
 header {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 2;
     position: sticky;
     top: 0;
@@ -20,14 +21,14 @@ header {
 }
 
 main {
-    background-color:rgb(187,188,191);
+    background-color: rgb(187, 188, 191);
     grid-column: 1;
     grid-row: 4;
 }
 
 footer {
-    background-color: rgb(109,110,112);
-   grid-column: 1;
+    background-color: rgb(109, 110, 112);
+    grid-column: 1;
     grid-row: 5;
 }
 
@@ -35,7 +36,7 @@ footer {
 /*menu*/
 
 nav {
-    background-color:rgb(109,110,112);
+    background-color: rgb(109, 110, 112);
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -57,7 +58,7 @@ nav {
     border-style: none;
     height: 3.5em;
     width: 3.5em;
-     display: flex;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -73,7 +74,7 @@ nav a {
     letter-spacing: 0.4em;
     text-decoration: none;
     color: white;
-    list-style: none;  
+    list-style: none;
 }
 
 nav a:hover {
@@ -81,41 +82,40 @@ nav a:hover {
     letter-spacing: 0.3em;
 }
 
-.logo:hover{
+.logo:hover {
     transform: rotate(-30deg);
 }
-.logo:active{
+
+.logo:active {
     transform: rotate(200deg);
     background-color: red;
 }
-@keyframes swing /*BRON:https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/*/
-{
-    15%
+
+@keyframes swing
+/*BRON:https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/*/
+
     {
+    15% {
         transform: translateX(5px);
     }
-    30%
-    {
+    30% {
         transform: translateX(-5px);
     }
-    50%
-    {
+    50% {
         transform: translateX(3px);
     }
-    65%
-    {
+    65% {
         transform: translateX(-3px);
     }
-    80%
-    {
+    80% {
         transform: translateX(2px);
     }
-    100%
-    {
+    100% {
         transform: translateX(0);
     }
 }
-.winkelmand:hover{
+
+.winkelmand:hover {
     animation: swing 1s ease;
     animation-iteration-count: 1;
 }
@@ -123,15 +123,15 @@ nav a:hover {
 /*main*/
 
 h2 {
-   text-align: center;
+    text-align: center;
 }
 
 /*li {
     list-style: none;
 } */
- 
+
 .wrapper {
-     display: flex;
+    display: flex;
     flex-flow: column wrap;
     align-content: center;
 }
@@ -139,6 +139,7 @@ h2 {
 section {
     margin: 0em;
 }
+
 section > a {
     text-decoration: none;
 }
@@ -148,7 +149,7 @@ section > a {
     height: 10em;
     padding: 2em;
     opacity: 1;
-    
+
 }
 
 
@@ -157,11 +158,11 @@ section > a {
     opacity: 0.5;
     transform: scale(0.9);
     transition: .3s ease-in-out;
-} 
+}
 
 h3 {
     font-size: 80%;
-    color:rgb(255,242,45);
+    color: rgb(255, 242, 45);
     text-align: center;
     margin-top: -2em;
     display: flex;
@@ -175,7 +176,7 @@ h3 {
 footer {
     padding: 2em;
     display: grid;
-    
+
 }
 
 footer > p {
@@ -199,19 +200,24 @@ footer > h5 {
     justify-content: space-around;
     padding: 0;
 }
+
 .social > li {
     width: 2em;
     list-style: none;
 }
+
 .fb:hover {
     transform: rotate(240deg);
 }
-.pint:hover{
+
+.pint:hover {
     transform: rotate(140deg);
 }
+
 .ig:hover {
     transform: rotate(30deg);
 }
+
 footer > a {
     text-decoration: none;
     font-size: 50%;
@@ -219,18 +225,21 @@ footer > a {
 }
 
 /*DETAILPAGINA*/
-.detail{
-     padding: 1em;
+
+.detail {
+    padding: 1em;
     margin: 0em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
+
 .position {
     position: relative;
-    
+
 }
-.mand{
+
+.mand {
     background: url(/images/winkel1.svg);
     background-repeat: no-repeat;
     border-style: none;
@@ -239,29 +248,58 @@ footer > a {
     position: absolute;
     bottom: 5%;
     left: 85%
-    
 }
 
 .mand:hover {
     transition-delay: 0.1s;
-     background: url(/images/inwinkel.svg);
+    background: url(/images/inwinkel.svg);
     background-repeat: no-repeat;
     width: 17em;
     height: 17em;
-     position: absolute;
+    position: absolute;
     bottom: 10%;
     left: 35%;
     top: 85%;
-    z-index: 2; /*doet dit wat?*/
-    
-} 
+    z-index: 2;
+    /*doet dit wat?*/
+}
+
 .detailprod > h3 {
     padding: 2em;
     margin: 1em;
-   font-size: 1em;
-    
+    font-size: 1em;
+
 }
-.info {max-width: 25em;} 
+
+/*ipv img veranderen dit met button te doen bij hover????????*/
+
+
+
+
+
+
+
+.winkeltje{
+    opacity: 0;
+   
+}/*
+.winkeltje:hover {
+    opacity: 1;
+ padding: 0.em 2em ;
+    margin: 1em;
+    text-align: center;
+    color: red;
+    border-style: solid;
+    border-color: aqua;
+    background-color: grey;
+}
+*/
+
+
+
+.info {
+    max-width: 25em;
+}
 
 label {
     border: red;
@@ -272,80 +310,80 @@ label {
 
 /*IPAD*/
 
+/*mediaquiries in em ipv pixels!!!*/
+
 @media (min-width:700px) {
     body {
         background-color: floralwhite;
     }
     nav {
         display: flex;
-        flex-flow:row ;
+        flex-flow: row;
         justify-content: center;
         justify-content: space-between;
-            }
+    }
     .logo:hover {
         transform: rotate(100deg);
     }
-    h3{
+    h3 {
         margin-top: -5em;
     }
 
     .prod {
-       width: 10em;
+        width: 10em;
         height: 10em;
         padding: 4em;
     }
-    
+
     .prod:hover {
-    transform: scale(1.2);
-}
+        transform: scale(1.2);
+    }
 
 
     .wrapper {
-       display: flex;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         justify-content: space-around;
         align-content: center;
-        
+
     }
 
-} 
+}
 
 @media (min-width:950px) {
     body {
         background-color: black;
     }
-    .logo{
+    .logo {
         transition: width 2s, height 2s, transform 2s;
     }
-    .logo:hover{
+    .logo:hover {
         transform: rotate(180deg);
     }
     .prod {
         padding: 4em 5em;
         width: 12em;
         height: 12em;
-        
+
     }
-    .wrapper {
-        
-    }
+    .wrapper {}
     .social img {
         height: 4em;
     }
-    
+
 }
+
 @media (min-width:1250px) {
     .prod {
         padding: 4em 5em;
         width: 13em;
         height: 13em;
     }
-    .detailprod{
-        
-    }
+    .detailprod {}
 }
+
 @media (min-width:1390px) {
     .prod {
         padding: 4em 5em;
@@ -353,6 +391,7 @@ label {
         height: 14em;
     }
 }
+
 @media (min-width:1520px) {
     .prod {
         padding: 4em 5em;
@@ -360,6 +399,7 @@ label {
         height: 15em;
     }
 }
+
 @media (min-width:1720px) {
     .prod {
         padding: 4em 6em;
@@ -367,6 +407,7 @@ label {
         height: 15em;
     }
 }
+
 @media (min-width:1830px) {
     .prod {
         padding: 4em 7em;
@@ -374,6 +415,7 @@ label {
         height: 15em;
     }
 }
+
 @media (min-width:1965px) {
     .prod {
         padding: 4em 7em;
