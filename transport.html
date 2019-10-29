@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcel Breuer B34</title>
+    <title>Transport</title>
     <link rel="stylesheet" href="/styles/mobilestyles.css">
-    
-    
+
+
 </head>
 
 <body>
@@ -24,27 +24,36 @@
 
 
     <main>
-        <h2 class="detailtitel">Stoelen</h2>
-        <section class="detail">
-            <!-- Article in section of sections in article?-->
+        <h2>Transport</h2>
+        <p> Wilt u producten laten leveren? Vul dit formulier dan in en wij zullen zo snel mogelijk contact met u opnemen. Vul alle velden in.
+        
+        </p>
+        <form action="/stuurmail" method="post">
+            <fieldset>
+                <legend>Gegevens</legend>
+                <label for="naam">Naam</label>
+                <input type="text" placeholder="Naam" id="naam" required />
 
-            <article class="position">
-                <img src="images/stoeldetail.jpg" alt="Marcel Breuer" width="300" height="300" />
-                <button class="mand" type="button" src="#"></button>
+                <label for="mail">E-mail</label>
+                <input type="email" placeholder="Email" id="mail" required />
+
+                <label for="straat">Straatnaam</label>
+                <input type="text" placeholder="Straatnaam" id="straat" required />
+
+                <label for="postcode">Postcode</label>
+                <input type="text" placeholder="Postcode" id="postcode" maxlength="6" required />
+
+                <label>Land</label>
+                <select>
+                    <option value="Nederland">Nederland</option>
+                    <option value="Engeland">Engeland</option>
+                    <option value="Japan">Japan</option>
+                </select>
                 
-            </article>
+                <button type="submit">Sturen</button>
+            </fieldset>
 
-            <article class="detailprod">
-                <h3>Marcel Breuer B34</h3>
-                <p>Zwevend chroombuis achterpootloos stoel <br />
-                Zwart zadel leder / leer zitting rug en armleuningen <br />
-                Reproductie / kopie van deze design klassieker uit de jaren 30</p>
-
-
-            </article>
-
-
-        </section>
+        </form>
     </main>
     <!-- in form of strong -->
     <footer>
