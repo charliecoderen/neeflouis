@@ -1,19 +1,13 @@
-/* Alle lettertypes/font-sizes nog aanpassen*/
-
-/*detailpagina afmaken: winkelwagen, aantal items*/
-
-/**/
-
 body {
     padding: 0em 1em 1em 1em;
-    margin: 2em;
+    margin: 0em;
+
+    font-family: "Courier New";
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20px 1fr 20px;
     grid-gap: 1em;
-
-
 
 }
 
@@ -25,13 +19,14 @@ header {
 
     grid-column: 1;
     grid-row: 2;
+
 }
 
 main {
-    background-color: rgb(187, 188, 191);
-
+    background-color: grey;
     grid-column: 1;
     grid-row: 4;
+
 }
 
 footer {
@@ -39,32 +34,16 @@ footer {
 
     grid-column: 1;
     grid-row: 5;
+
+    padding: 2em 1em;
+
+    display: grid;
+
 }
+
 
 /*----------------------------------
-fonts
------------------------------------*/
-
-body {
-    font-family: "Courier New"
-}
-
-h2 {
-    font-family: trebuchet MS;
-    font-family: monospace;
-    font-size: 2.5em;
-}
-
-h3 {
-    font-family: "Trebuchet MS";
-}
-
-p {
-    font-family: Verdana;
-}
-
-/*----------------------------------
-menu
+MENU
 -----------------------------------*/
 
 nav {
@@ -83,7 +62,7 @@ nav {
 
     padding: 0.8em;
     margin: 0em;
-    
+
 }
 
 nav a {
@@ -99,26 +78,23 @@ nav a {
     justify-content: center;
 
     list-style: none;
+
 }
 
 nav a:hover {
     color: aquamarine;
 
     letter-spacing: 0.3em;
+
 }
 
 header > nav > a > img:hover {
-    
+
     transition: all 1s;
     transform: rotate(30deg);
 
 }
 
-header > nav > a > img:active {
-    background-color: red;
-    
-
-}
 
 header > nav > button {
     background: url(/images/SVG/winkelmand.svg);
@@ -131,11 +107,14 @@ header > nav > button {
 
     display: flex;
     justify-content: flex-end;
+
 }
 
 header > nav > button:hover {
+
     animation: swing 1s ease;
     animation-iteration-count: 1;
+
 }
 
 @keyframes swing
@@ -165,11 +144,14 @@ BRON:https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-wil
 }
 
 /*----------------------------------
-main
+MAIN
 -----------------------------------*/
 
 h2 {
     text-align: center;
+    font-family: trebuchet MS;
+    font-family: monospace;
+    font-size: 2.5em;
 
 
     transform: rotateY(20deg);
@@ -186,75 +168,79 @@ h2 {
     }
 }
 
-
-
-main {
-}
-
-section {
-    grid-column: 0;
-}
-
-section > a {
-    text-decoration: none;
-}
-
-
-.prod:hover {
-    opacity: 0.5;
-
-    transform: scale(0.9);
-    transition: .3s ease-in-out;
-}
-
 h3 {
-    font-size: 80%;
+    font-size: 1em;
+    font-family: "Trebuchet MS";
     text-align: center;
     letter-spacing: 0.2em;
     color: rgb(255, 242, 45);
 
-    margin-top: -2em;
-
-    display: flex;
-    justify-content: center;
+    grid-column: 2;
 
 }
+
+.hoofdpagina > a {
+    text-decoration: none;
+}
+
+a > article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.prod {
+    grid-column: 2;
+
+    width: 20em;
+    height: 20em;
+
+}
+
+.prod:hover {
+    opacity: 0.5;
+
+    transition: .2s ease-in-out;
+
+}
+
+
 
 /*---------------------------------
-footer
+FOOTER
 -------------------------------*/
 
-footer {
-    padding: 2em;
+footer > strong > p {
+    font-weight: 10;
+    font-size: 0.9em;
 
-    display: grid;
-}
-
-footer > p {
-    font-size: 0.7em;
-
-    padding: 1em;
+    padding: 2em 0em;
     margin: 0em;
+
 }
 
 footer > h4 {
     margin: 0em;
+
 }
 
 footer > h5 {
     font-size: 70%;
+
 }
 
 footer > a {
-    font-size: 50%;
+    font-size: 0.7em;
     color: aqua;
     text-decoration: none;
 
-    padding: 1em 2em;
+    padding: 1em 0em;
+
 }
 
 footer > a:hover {
     color: red;
+
 }
 
 ul {
@@ -269,20 +255,23 @@ ul > li {
     width: 2em;
 
     list-style: none;
+
 }
 
 .fb:hover {
     transform: rotate(240deg);
+
 }
 
 .pint:hover {
     transform: translate(10vw);
+
 }
 
 .ig:hover {
     transform: rotate(30deg);
-}
 
+}
 
 
 /*DETAILPAGINA*/
@@ -292,17 +281,23 @@ ul > li {
 
 }
 
-.detail {
-    padding: 1em;
-    margin: 0em;
+section {
+    padding: 0;
+    margin: 1em;
+    margin-bottom: 4em;
+
+    min-width: 10em;
+    max-width: 50em;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+
 }
 
-.position {
+section > article {
     position: relative;
+
 }
 
 .mand {
@@ -320,6 +315,7 @@ ul > li {
 
 .mand:hover {
     animation: roll 3s;
+
 }
 
 @keyframes roll
@@ -336,6 +332,7 @@ ul > li {
 
 .mand:active {
     animation: roll2 3s;
+
 }
 
 
@@ -350,30 +347,27 @@ ul > li {
         transform: rotate(0deg);
     }
 }
-body.shop .mand {
-    /*
-    transform: translate(10vw);*/
-}
+
 
 .mand {
     transition: .25s;
+
 }
 
 header > nav > button {
     transition: all 0.5s;
+
 }
 
 body.shop header > nav > button {
     transform: rotate(360deg);
 
     background-image: url(/images/SVG/winkelmandpopup.svg);
-    /*
-    Image met rondje bij winkelmAND
-    */
+
 }
 
 
-.detailprod > h3 {
+section > article > h3 {
     font-size: 1em;
 
     padding: 2em;
@@ -381,7 +375,7 @@ body.shop header > nav > button {
 
 }
 
-.detailprod > p {
+section > article > p {
     max-width: 25em;
 }
 
@@ -390,18 +384,18 @@ body.shop header > nav > button {
 main > p {
     max-width: 50em;
 
-    margin: 2.9em;
-    margin-left: 3em;
+    margin: 1em;
+
 }
 
 fieldset {
-    
     min-width: 10em;
-    
+    max-width: 50em;
+
     padding: 2em;
-    margin: 3em;
+    margin: 1em;
     border: 0.1em solid black;
-    
+
 }
 
 legend {
@@ -410,6 +404,7 @@ legend {
     text-align: center;
 
     padding: 1em 2em;
+
 }
 
 input[type="text"],
@@ -422,12 +417,14 @@ select {
     padding: 0.5em 19em 0.5em 0em;
     border: 0;
     border-radius: 0.3em;
+
 }
 
 fieldset > button:hover {
     background-color: grey;
     color: black;
-    border-radius: 50% 10%;
+    border-radius: 5% 10%;
+
 }
 
 fieldset > button:focus {
@@ -435,18 +432,14 @@ fieldset > button:focus {
 
 }
 
-/*----------------------------
-states form
----------------------------*/
-
-#postcode:focus {
+#postcode:active {
     border: solid black;
+
 }
-
-
 
 #postcode {
     padding: 0.5em 2em 0.5em 0em;
+
 }
 
 select {
@@ -455,10 +448,12 @@ select {
 
     width: 40%;
     max-width: 40%;
+
 }
 
 label {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.5em;
+
 }
 
 fieldset > button {
@@ -471,6 +466,7 @@ fieldset > button {
     padding: 1em 6em;
     margin-top: 2em;
     border-radius: 0.3em;
+
 }
 
 /*-------------------------------
@@ -482,30 +478,41 @@ IPAD
 */
 
 @media (min-width:48em) and (max-width: 64em) {
-    body {}
 
     nav {
         display: flex;
         flex-flow: row;
         justify-content: center;
         justify-content: space-between;
+
     }
 
     header > nav > a > img:hover {
         transform: rotate(100deg);
-    }
-
-    .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
     }
 
     .prod {
-     
+        width: 25em;
+        height: 25em;
 
     }
+
+    section {
+        margin-left: -0.6em;
+
+    }
+
+    section > article > h3 {
+        padding-top: 0em;
+        padding-left: 0em;
+        margin-top: 0em;
+        margin-left: 0em;
+
+        text-align: left;
+
+    }
+
 }
 
 /*
@@ -514,28 +521,49 @@ LAPTOP
 
 @media (min-width: 64em) {
 
-    body {
-        background-color: dodgerblue;
-    }
-
     nav {
         display: flex;
         flex-flow: row;
         justify-content: center;
         justify-content: space-between;
+
     }
 
     header > nav > a > img:hover {
         transform: rotate(100deg);
+
     }
 
-    .wrapper {
-      
+    .hoofdpagina {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+
+    }
+
+    h2 {
+        grid-column: span 2;
+
     }
 
     .prod {
-  
+        width: 25em;
+        height: 25em;
+
+    }
+
+    section {
+        margin-left: -0.6em;
+
+    }
+
+    section > article > h3 {
+        padding-top: 0em;
+        padding-left: 0em;
+        margin-top: 0em;
+        margin-left: 0em;
+
+        text-align: left;
 
     }
 }
-

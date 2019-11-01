@@ -1,7 +1,6 @@
-
-
 var body = document.body;
-var btnMand = document.querySelector('article .mand');
+var btnMand = document.querySelector('.mand');
+
 
 function addProd() {
     body.classList.add('shop');
